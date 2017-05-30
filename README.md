@@ -1,8 +1,8 @@
-GitLab Runner [![Build Status](https://api.travis-ci.org/riemers/ansible-gitlab-runner.svg?branch=master)](https://travis-ci.org/riemers/ansible-gitlab-runner) [![Ansible Role](https://img.shields.io/badge/role-riemers.gitlab--runner-blue.svg?maxAge=2592000)](https://galaxy.ansible.com/riemers/gitlab-runner/)
+GitLab Runner [![Build Status](https://api.travis-ci.org/diadzine/ansible-gitlab-runner.svg?branch=master)](https://travis-ci.org/diadzine/ansible-gitlab-runner) [![Ansible Role](https://img.shields.io/badge/role-diadzine.gitlab--runner-blue.svg?maxAge=2592000)](https://galaxy.ansible.com/diadzine/gitlab-runner/)
 =============
 
 This role will install the [official GitLab Runner](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner)
-(fork from haroldb) with updates. Needed something simple and working, this did the trick for me. Open for changes though.
+(fork from riemers from haroldb) with updates. Needed something simple and working, this did the trick for me. Open for changes though.
 
 Requirements
 ------------
@@ -38,7 +38,7 @@ The default Docker image to use. Required when executor is `docker`.
 The tags assigned to the runner,
 Defaults to an empty list.
 
-See the [config for more options](https://github.com/riemers/ansible-gitlab-runner/blob/master/tasks/register-runner.yml)
+See the [config for more options](https://github.com/diadzine/ansible-gitlab-runner/blob/master/tasks/register-runner.yml)
 
 Example Playbook
 ----------------
@@ -48,7 +48,7 @@ Example Playbook
   vars_files:
     - vars/main.yml
   roles:
-    - { role: riemers.gitlab-runner }
+    - { role: diadzine.gitlab-runner }
 ```
 
 Inside `vars/main.yml`
